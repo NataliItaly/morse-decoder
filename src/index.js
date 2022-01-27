@@ -56,7 +56,7 @@ function decode(expr) {
 	let finalStr = arr.join('');
 
 	 if (finalStr.includes('**********')) {
-		finalStr = finalStr.replaceAll('**********', ' ');
+		finalStr = finalStr.replace(/\*\*\*\*\*\*\*\*\*\*/g, ' ');
 	 }
 	 
 	console.log(finalStr);
